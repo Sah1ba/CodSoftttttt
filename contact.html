@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - World's Biggest University</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!---------------------- Header Section ------------------->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="course.html">SERVICES</a>
+                        <a href="contact.html">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-------------------- Contact Section -------------------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571458558!2d72.71637318028604!3d19.082177512541442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1727551663469!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Chamber Road, Amber Building near Fort</h5>
+                        <p>Mumbai, Maharashtra, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 112345678</h5>
+                        <p>Monday To Saturday, 10 am to 6 pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>WellSpring09@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form id="appointmentForm">
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                    <input type="email" id="email" placeholder="Enter Email ID" required>
+                    <input type="text" id="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" id="message" placeholder="Message" required></textarea>
+                    <input type="date" id="appointmentDate" required>
+                    <input type="time" id="appointmentTime" required>
+                    <button type="submit" class="hero-btn2">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------- Footer ----------------------->
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>State-of-the-Art Facilities<br>Our center is equipped with advanced medical technology to provide effective diagnosis and treatment.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <p>Made with <i class="fa fa-heart-o"></i></p>
+        </div>
+    </section>
+
+    <!--------------------- JavaScript --------------------->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu() {
+            navlinks.style.right = "0px";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+
+        document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+            const appointmentDate = document.getElementById("appointmentDate").value;
+            const appointmentTime = document.getElementById("appointmentTime").value;
+
+            console.log("Appointment Details:", {
+                name,
+                email,
+                subject,
+                message,
+                appointmentDate,
+                appointmentTime
+            });
+
+            this.reset();
+            alert("Thank you for your appointment request! We will contact you soon.");
+        });
+    </script>
+</body>
+</html>

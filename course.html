@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Biggest University</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+
+    <!---------------------- Header Sectiom ------------------->
+
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times"onclick="hidemenu()"></i>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="course.html">SERVICES</a>
+                    <a href="contact.html">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Our Services</h1>
+    </section>
+
+    <!-- -------------------courses------------ -->
+    
+    <section class="Course">
+        <h1>The Best Doctor gives the least medicines</h1>
+        <p>we believe in a holistic approach to healthcare that prioritizes your overall well-being.</p>
+        <div class="row">
+            <div class="course-col">
+                <img src="img/service-icon-1.png" alt="">
+                <h3>Cardio Monitoring</h3>
+                <p>Here, our Cardio Monitoring Service is dedicated to ensuring your heart health is a top priority. We offer advanced continuous monitoring and personalized care plans tailored to your individual needs. With options for remote monitoring, you can conveniently track your heart health from home. Our team of experienced specialists is here to provide education and support, empowering you to make informed decisions about your cardiovascular wellness. Let us help you take proactive steps toward a healthier heart!
+
+                </p>
+            </div>
+            <div class="course-col">
+                <img src="img/service-icon-2.png" alt="">
+                <h3>Medical Treatment</h3>
+                <p>Here, we provide comprehensive medical treatment services tailored to meet the diverse needs of our patients. Our experienced healthcare team offers a wide range of services, including preventive care, chronic disease management, and urgent care for acute conditions. With a patient-centered approach, we prioritize your health and well-being, ensuring that each treatment plan is personalized to address your unique medical concerns. Our commitment to excellence and compassionate care helps you achieve optimal health and recovery.
+
+                </p>
+            </div>
+            <div class="course-col">
+                <img src="img/service-icon-3.png" alt="">
+                <h3>Emergency Help</h3>
+                <p>Here, we are dedicated to providing prompt and effective emergency help for urgent medical situations. Our experienced team is available 24/7 to address a wide range of emergencies, from minor injuries to serious health issues. Equipped with advanced medical technology and a compassionate approach, we ensure that every patient receives immediate care and attention. Your health and safety are our top priorities, and we are here to support you in times of need.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------Facilities--------------- -->
+
+        <section class="campus">
+        <h1>Our Doctor Panel</h1>
+        <p> fostering a collaborative relationship between doctors and patients.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="img/doc-1.png" alt="">
+                <div class="layer">
+                    <h3>ibrahim</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="img/prettyy.webp" alt="">
+                <div class="layer">
+                    <h3>sahiba</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="img/doc-3.png" alt="">
+                <div class="layer">
+                    <h3>maheen</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- --------------------- Footer ----------------------- -->
+    
+    
+    
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p> <br>Commitment to Community<br>
+        We actively engage in local health initiatives and provide resources to educate and empower our neighbors about health and wellness.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"> </i>
+            <i class="fa fa-twitter"> </i>
+            <i class="fa fa-instagram"> </i>
+            <i class="fa fa-linkedin"> </i>
+            <p>Made with <i class="fa fa-heart-o"></i></p>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- java script for toggle menu -->
+    
+    
+    <script>
+        var navlinks= document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right="0px";
+        }
+        function hidemenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
